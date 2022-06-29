@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/* ---------- Global ---------- */
+
+:root {
+  /* Text Colors */
+  --text-White: hsl(0, 0%, 100%);
+  --text-transparent-White1: hsla(0, 0%, 100%, 0.75);
+  --text-transparent-White2: hsla(0, 0%, 100%, 0.6);
+  --text-accent-softViolet: hsl(277, 64%, 61%);
+  /* Background Colors */
+  --bg-very-darkBlue: hsl(233, 47%, 7%);
+  --bg-desaturated-darkBlue: hsl(244, 38%, 16%);
+  --bg-accent-strongViolent: hsl(280, 80%, 40%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 0.9375rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}
+
+/* ---------- /Global ---------- */
+
+/* -------------------- MOBILE -------------------- */
+/* ---------- Main Container ---------- */
+.main {
+  background-color: var(--bg-very-darkBlue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--bg-desaturated-darkBlue);
+
+  width: 350px;
+  height: auto;
+  margin: 25px;
+  border-radius: 0.75rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- /Main Container ---------- */
+
+/* ---------- Main Image ---------- */
+
+.main-image {
+  width: 100%;
+  min-width: auto;
+  height: 17rem;
+  background: url(/images/image-header-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+}
+
+.color-overlay {
+  width: 100%;
+  min-width: auto;
+  height: 17rem;
+  background: var(--bg-accent-strongViolent);
+  opacity: 0.5;
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+}
+
+/* ---------- /Main Image ---------- */
+
+/* ---------- Main Text ---------- */
+.main-text {
+  width: 75%;
+  font-family: "Inter", sans-serif;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text h1 {
+  color: var(--text-White);
+  font-size: 1.75rem;
+  font-weight: 700;
+
+  margin-top: 2rem;
+}
+
+.main-text p {
+  color: var(--text-transparent-White1);
+  line-height: 1.5rem;
+
+  margin-top: 1rem;
+}
+
+.main-text span {
+  color: var(--text-accent-softViolet);
+}
+/* ---------- /Main Text ---------- */
+
+/* ---------- Main Stats ---------- */
+
+.main-stats {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+.stat {
+  margin-top: 2rem;
+}
+
+.main-stats h2 {
+  color: var(--text-White);
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main-stats p {
+  color: var(--text-transparent-White2);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+
+  margin-top: 0.5rem;
+}
+
+/* ---------- Main Stats ---------- */
+
+/* -------------------- DESKTOP -------------------- */
+@media (min-width: 1440px) {
+  /* ---------- Main Container ---------- */
+
+  .main {
+    background-color: var(--bg-very-darkBlue);
+  }
+
+  .container {
+    width: 72rem;
+    height: 28rem;
+    margin: 0;
+    border-radius: 0.5rem;
+    flex-direction: row-reverse;
+  }
+
+  /* ---------- /Main Container ---------- */
+
+  /* ---------- Main Image---------- */
+
+  .main-image {
+    width: 50%;
+    height: 100%;
+
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .color-overlay {
+    width: 100%;
+    height: 100%;
+
+    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 0.75rem;
+  }
+
+  /* ---------- /Main Image---------- */
+
+  /* ---------- Main Text---------- */
+
+  .text-container {
+    width: 50%;
+    padding-left: 4rem;
+    text-align: start;
+
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-text h1 {
+    font-size: 2.25rem;
+  }
+
+  .main-text p {
+    margin-top: 2rem;
+    line-height: 1.75rem;
+  }
+
+  /* ---------- /Main Text---------- */
+
+  /* ---------- /Main Stats---------- */
+
+  .main-stats {
+    display: flex;
+    justify-content: center;
+  }
+  .stat {
+    margin-top: 4rem;
+    margin-right: 5rem;
+  }
+
+  /* ---------- /Main Stats---------- */
+}
