@@ -49,7 +49,7 @@ Users should be able to:
 
 1. Learned to use the CSS @media to create a desktop layout. Then rearranging the card's contents the using CSS Flex. Basicily, learned to reverse engineer the commands used on the mobile version to fit the destop version.
 
-2. Learned to use CSS background properties to create an overlay to the main image.
+2. Learned to use CSS background properties to create a violet overlay to the main image.
 
 ```css
 .main-image {
